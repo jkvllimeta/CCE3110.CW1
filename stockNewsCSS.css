@@ -1,0 +1,152 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 7, 2018, 8:13:19 PM
+    Author     : Joseph
+*/
+
+h1 {
+    align: center;
+    font-family: 'Anton',sans-serif;
+    font-size: 3em;
+    text-align: center;
+    
+}
+
+button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: white;
+  border: 3px solid black;
+  color: black;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  padding: 15px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 10px 10px 10px gray;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '+';
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 15px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#stockButtonBox{
+    width: 45%;
+    height: 50%;
+    float: left;
+}
+
+#stockList {
+    
+    width: 45%;
+    height: 500px;
+    max-height: 500px;
+    float: left;
+    background-color: lightgrey;
+    border-collapse: collapse; 
+    box-sizing: border-box;
+    overflow: scroll;
+    padding: 10px;
+    
+}
+
+#stockList.table {
+  border-collapse: collapse;
+}
+
+#stockList.table, th, td {
+  border: 1px solid black;
+}
+
+
+table{
+    table-layout: fixed;
+}
+
+tr:nth-child(even) 
+{
+    background-color: #f2f2f2;
+}
+
+#headlineButtonBox{
+    width: 25%;
+    float: left;
+}
+
+#headlineList {
+
+    width: 25%;
+    height: 500px;
+    float: left;
+    background-color: #333333;
+    border-collapse: collapse;
+    overflow: scroll;
+    padding: 15px;
+    box-sizing: border-box;
+    
+}
+
+#headlineButtonBox2{
+    width: 25%;
+    float: left;
+}
+
+#headlineList2 {
+
+    
+  width: 25%;
+  height: 500px;
+  max-height: 500px;
+  position: relative;
+  float: left;
+  background-color: #333333;
+  border-collapse: collapse;
+  overflow: scroll;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.hltext{
+    font-family: 'Roboto Mono', monospace;
+}
+
+a:link {
+  color: white;
+}
+
+
+a:visited {
+  color: lightblue;
+}
+
+a:hover {
+    color: lightgrey;  
+}
+
